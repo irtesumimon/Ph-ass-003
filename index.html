@@ -1,13 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                basic: '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+  <body class="manrope-text">
+    <header>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <img
+            class="h-6 bg-basic rounded-full"
+            src="./images/arrow-right-up-line.svg"
+            alt=""
+          />
+          <a class="p-2 font-extrabold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-basic py-3 px-5 rounded-box font-extrabold"
+            >Book Consult</a
+          >
+        </div>
+      </div>
+
+<!-- First hero section -->
+
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content text-center">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+
+<!-- Features section -->
+
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <h1 class="text-5xl font-bold">We design thoughtful, liveable spaces</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+<!-- Cards Section -->
+
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Our Works Process</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+<!-- special layout challange section -->
+
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Form section -->
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Let’s Discuss Next Project</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+    </main>
+
+<!-- Footer section -->
+
+      <footer
+        class="footer footer-center bg-black p-10 text-[#efefef]"
+      >
+        <div class="flex">
+          <img
+            class="h-6 bg-[#ABEF5F] rounded-full"
+            src="./images/arrow-right-up-line.svg"
+            alt=""
+          />
+          <a class="text-3xl font-extrabold"
+            >Rinterio</a
+          >
+        </div>
+        <p>
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, <br />
+          featuring weathered wood, sleek metal accents.
+        </p>
+
+        <nav>
+            <ul class="menu menu-horizontal px-1 gap-24">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+        </nav>
+        
+        <a class="btn bg-basic py-3 px-5 rounded-box font-extrabold flex"
+            >Book Consult <img class="w-5 rounded-full bg-black" src="./images/arrow-right-up-line.svg" alt=""></a
+          >
+      </footer>
+    </footer>
+  </body>
 </html>
