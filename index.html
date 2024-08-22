@@ -17,21 +17,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                basic: '#ABEF5F',
-              }
-            }
-          }
-        }
-      </script>
+    <script src="tailwind.config.js"></script>
   </head>
-  <body class="manrope-text">
-    <header>
-      <div class="navbar bg-base-100">
+  <body class="manrope-text bg-base-200">
+    <header class="md:container mx-auto ">
+      <div class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -54,7 +44,7 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li><a>Home</a></li>
+              <li><a >Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
@@ -62,15 +52,15 @@
             </ul>
           </div>
           <img
-            class="h-6 bg-basic rounded-full"
+            class="w-8 h-8 p-1 bg-basic rounded-full"
             src="./images/arrow-right-up-line.svg"
             alt=""
           />
-          <a class="p-2 font-extrabold">Rinterio</a>
+          <a class="p-2 font-extrabold text-2xl">Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
+            <li><a class="font-bold">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
             <li><a>Blogs</a></li>
@@ -78,8 +68,14 @@
           </ul>
         </div>
         <div class="navbar-end">
+            <!-- Neheta check here -->
+            <!-- Neheta check here -->
+            <!-- Neheta check here -->
+            <!-- Neheta check here -->
+            <div class="w-8"><img class="w-7 mr-5 bg-white rounded-full" src="./images/search-line.svg" alt=""></div>
+            <img class="w-7 mr-5 bg-white rounded-full" src="./images/shopping-cart-2-line.svg" alt="">
           <a class="btn bg-basic py-3 px-5 rounded-box font-extrabold"
-            >Book Consult</a
+            >Book Consult<img class="w-6 text-white" src="./images/arrow-right-up-line.svg" alt=""></a
           >
         </div>
       </div>
