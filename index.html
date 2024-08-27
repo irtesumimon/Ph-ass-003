@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
-<!-- Head section -->
+  <!-- Head section -->
 
   <head>
     <meta charset="UTF-8" />
@@ -19,17 +18,26 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
     <script src="tailwind.config.js"></script>
+
+    <style>
+      .manrope-text {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
   <body class="manrope-text bg-base-200">
     <!-- Header section -->
 
-    <header class="md:container mx-auto px-12">
+    <header class="lg:container mx-auto px-4 lg:px-12">
       <div class="navbar">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost border border-red-200 lg:hidden">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost border border-red-200 lg:hidden"
+            >
               <svg
                 xmlns="http//www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -72,9 +80,9 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end hidden lg:flex space-x-4 mb-4">
           <div
-            class="w-9 h-9 justify-center bg-white rounded-full flex justify-center"
+            class="w-9 h-9 bg-white rounded-full flex justify-center"
           >
             <img class="w-7 h-7 m-auto" src="./images/search-line.svg" alt="" />
           </div>
@@ -97,7 +105,7 @@
 
       <!-- First hero section -->
 
-      <div class="hero min-h-screen md:container mx-auto px-12">
+      <div class="hero min-h-screen md:container mx-auto px-4 lg:px-12">
         <div class="hero-content text-center grid">
           <img class="mx-auto" src="./images/banner.png" alt="" />
           <h1 class="text-6xl font-extrabold">
@@ -123,9 +131,9 @@
     <main>
       <!-- Features section -->
 
-      <div class="hero min-h-screen md:container mx-auto px-12">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <img src="./images/Rectangle.png" class="max-w-sm rounded" />
+      <div class="hero min-h-screen md:container mx-auto px-4 lg:px-12">
+        <div class="hero-content flex-col lg:flex-row-reverse h-full w-full">
+          <img class="" src="./images/Rectangle.png" class="max-w-sm rounded" />
           <div>
             <img
               class="pb-4 -translate-x-11"
@@ -164,7 +172,6 @@
 
               <br />
               <div class="card bg-white rounded-box flex-row p-7">
-
                 <div>
                   <img class="mr-6" src="./images/residential.png" alt="" />
                 </div>
@@ -183,7 +190,7 @@
 
       <!-- Cards Section -->
 
-      <div class="hero bg-base-200 min-h-screen md:container mx-auto">
+      <div class="hero bg-base-200 min-h-screen md:container mx-auto px-4 lg:px-12">
         <div class="hero-content text-center">
           <div class="container my-auto">
             <button class="btn bg-white rounded-full m-4">
@@ -200,7 +207,7 @@
               featuring weathered wood, sleek metal accents.
             </p>
             <div class="flex gap-6 m-auto">
-              <div class="card bg-[#E7C1D3] w-[17rem] h-[14rem]  text-left">
+              <div class="card bg-[#E7C1D3] w-[17rem] h-[14rem] text-left">
                 <div class="card-body">
                   <img class="w-12" src="./images/concept.png" alt="Shoes" />
 
@@ -251,103 +258,152 @@
 
       <!-- special layout challange section -->
 
-      <div class="hero bg-base-200 min-h-screen">
+      <div class="hero bg-base-200 min-h-screen mx-auto px-4 lg:px-12">
         <div class="hero-content text-center">
           <div class="">
             <button class="btn bg-basic bg-opacity-20 rounded-full">
               <img
                 class="w-5 rotate-45"
                 src="./images/arrow-right-up-line.svg"
-                alt=""/>Explore our Latest works
+                alt=""
+              />Explore our Latest works
             </button>
             <h1 class="text-5xl font-bold">Our Latest Portfolio</h1>
             <p class="py-6">
-              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
             </p>
             <div class="">
-              <div class="grid grid-cols-4 gap-4 ">
-              <div class=" col-span-3 flex text-left border border-[#E9E9E9] p-6 rounded-box"><div><img src="./images/img1.png" alt=""></div>
-              <div class="px-5">
-                <h1 class="font-extrabold pb-4">Commercial</h1>
-                <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
-                <h1 class="pt-5 font-extrabold">View Details <img
-                  class="w-7 bg-basic rounded-full inline"
-                  src="./images/arrow-right-up-line.svg"
-                  alt=""
-                /></h1>
-              </div></div>
-              <div class="border border-[#E9E9E9] p-6 rounded-box"><img src="./images/img2.png" alt=""></div>
+              <div class="grid grid-cols-3 gap-4">
+                <div
+                  class="col-span-2 flex text-left border border-[#E9E9E9] p-6 rounded-box"
+                >
+                  <div class="w-[27rem]">
+                    <img src="./images/img1.png" alt="" />
+                  </div>
+                  <div class="ml-5">
+                    <h1 class="font-extrabold pb-4">Commercial</h1>
+                    <p>
+                      The barn house captivates with its blend of rustic charm
+                      <br />
+                      and modern. The barn house captivates with its blend of
+                      rustic charm and modern .
+                    </p>
+                    <h1 class="pt-5 font-extrabold">
+                      View Details
+                      <img
+                        class="w-7 bg-basic rounded-full inline"
+                        src="./images/arrow-right-up-line.svg"
+                        alt=""
+                      />
+                    </h1>
+                  </div>
+                </div>
+                <div class="border border-[#E9E9E9] p-6 rounded-box w-[25rem]">
+                  <img src="./images/img2.png" alt="" />
+                </div>
 
-              <div class="border border-[#E9E9E9] p-6 rounded-box"><img src="./images/img3.png" alt=""></div>
+                <div
+                  class="col-span-3 flex text-left border border-[#E9E9E9] p-6 rounded-box"
+                >
+                  <div class="border border-[#E9E9E9] p-6 rounded-box">
+                    <img src="./images/img3.png" alt="" />
+                  </div>
 
-              <div class="border border-[#E9E9E9] p-6 rounded-box col-span-2 text-left flex"><div ><img class="w-[30rem]" src="./images/img4.png" alt=""></div>
-              <div class="px-5">
-                <h1 class="pb-4 font-extrabold">Commercial</h1>
-                <p>The barn house captivates with its blend of rustic charm and modern.</p>
-                <h1 class="pt-5 font-extrabold">View Details <img
-                  class="w-7 bg-basic rounded-full inline"
-                  src="./images/arrow-right-up-line.svg"
-                  alt=""
-                /></h1>
-              </div></div>
-              <div class="border border-[#E9E9E9] p-6 rounded-box"><img class="mx-auto" src="./images/img5.png" alt=""></div>
+                  <div
+                    class="border border-[#E9E9E9] p-6 rounded-box col-span-2 text-left flex"
+                  >
+                    <div><img class="" src="./images/img4.png" alt="" /></div>
+
+                    <div class="px-5">
+                      <h1 class="pb-4 font-extrabold">Commercial</h1>
+                      <p>
+                        The barn house captivates with its blend of rustic charm
+                        and modern.
+                      </p>
+                      <h1 class="pt-5 font-extrabold">
+                        View Details
+                        <img
+                          class="w-7 bg-basic rounded-full inline"
+                          src="./images/arrow-right-up-line.svg"
+                          alt=""
+                        />
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="border border-[#E9E9E9] p-6 rounded-box">
+                    <img class="mx-auto" src="./images/img5.png" alt="" />
+                  </div>
+                </div>
+              </div>
             </div>
-
-            </div>
-
-              
-            
-              
-             
-              
-            </div>
-
-            </div>
-            
           </div>
         </div>
       </div>
 
       <!-- Form section -->
-      <div class="hero bg-base-200 min-h-screen">
+
+      <div class="hero min-h-screen bg-[url('./images/bg.jpg')] mx-auto px-4 lg:px-12">
         <div class="hero-content text-center">
           <div class="">
             <button class="btn bg-basic bg-opacity-20 rounded-full">
               <img
                 class="w-6 rotate-45"
                 src="./images/arrow-right-up-line.svg"
-                alt=""/>Let's Connect
+                alt=""
+              />Let's Connect
             </button>
             <h1 class="text-5xl font-bold">Let's Discuss Next Project</h1>
-            <p class="py-6 ">
-              The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.
+            <p class="py-6">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, <br />
+              featuring weathered wood, sleek metal accents.
             </p>
-            
-        
+
             <div class="mx-auto">
-              <input type="text" placeholder="First Name*" class="input rounded-full mx-6 w-[30rem] h-[4rem]" />
-            <input type="text" placeholder="Last Name*" class="input rounded-full w-[30rem] h-[4rem] my-3" />
-            <input type="text" placeholder="Phone Number*" class="input rounded-full mx-6 w-[30rem] h-[4rem] mx-6" />
-            <input type="text" placeholder="Email Number*" class="input rounded-full w-[30rem] h-[4rem] my-3" />
-            <input type="text" placeholder="Write your message here" class="input rounded-[29px] w-[60rem] h-[16rem] mx-3 my-3 " />
+              <input
+                type="text"
+                placeholder="First Name*"
+                class="input rounded-full mx-6 w-[30rem] h-[4rem]"
+              />
+              <input
+                type="text"
+                placeholder="Last Name*"
+                class="input rounded-full w-[30rem] h-[4rem] my-3"
+              />
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="input rounded-full mx-6 w-[30rem] h-[4rem] mx-6"
+              />
+              <input
+                type="text"
+                placeholder="Email Number*"
+                class="input rounded-full w-[30rem] h-[4rem] my-3"
+              />
+              <div class="item-1 mx-[8rem] col-span-2 row-span-2 mb-3">
+                <input
+                  type="text"
+                  placeholder="Write your message here"
+                  class="input w-full mx-3 my-3 rounded-3xl h-56 p-3 pb-24"
+                />
 
-            <a class="btn bg-basic px-6 rounded-full font-extrabold flex w-4/5 mx-auto mt-4 mb-[6rem]"
-            >Book Consult
-            <img
-              class="w-8 rounded-full rotate-45"
-              src="./images/arrow-up-circle-fill.svg"
-              alt=""
-          /></a>
+
+                <a
+                class="btn bg-basic px-6 rounded-full font-extrabold flex w-full mt-4 mb-[6rem]"
+                >Book Consult
+                <img
+                  class="w-8 rounded-full rotate-45"
+                  src="./images/arrow-up-circle-fill.svg"
+                  alt=""
+              /></a>
+              </div>
+
+              
             </div>
-            
-            </div>
-         
-            
           </div>
-
-          
         </div>
-        
       </div>
     </main>
 
@@ -379,12 +435,12 @@
       </nav>
 
       <a class="btn bg-basic px-6 rounded-full font-extrabold flex"
-            >Book Consult
-            <img
-              class="w-8 rounded-full rotate-45"
-              src="./images/arrow-up-circle-fill.svg"
-              alt=""
-          /></a>
+        >Book Consult
+        <img
+          class="w-8 rounded-full rotate-45"
+          src="./images/arrow-up-circle-fill.svg"
+          alt=""
+      /></a>
     </footer>
   </body>
-</html>
+</html>  
